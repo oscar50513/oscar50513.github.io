@@ -6,15 +6,15 @@
   
   <title>Python 網頁爬蟲 | 小哲的部落格</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="開發流程: 分析網站原始碼，取得圖片標籤或屬性 爬取圖片所在網址 (來源網址) 下載圖片到資料夾裡面   所需套件:  pip install requests  pip install beautifulsoup4  pip install lxml     匯入模組:  from bs4 import BeautifulSoup  import requests  import os    1">
+  <meta name="description" content="開發流程: 分析網站原始碼，取得圖片標籤或屬性 爬取圖片所在網址 (來源網址) 下載圖片到資料夾裡面   所需套件:  pip install requests  pip install beautifulsoup4  pip install lxml     匯入模組:  from bs4 import BeautifulSoup  import requests  import os">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 網頁爬蟲">
 <meta property="og:url" content="https://oscar50513.github.io/2021/08/05/diary-200805/index.html">
 <meta property="og:site_name" content="小哲的部落格">
-<meta property="og:description" content="開發流程: 分析網站原始碼，取得圖片標籤或屬性 爬取圖片所在網址 (來源網址) 下載圖片到資料夾裡面   所需套件:  pip install requests  pip install beautifulsoup4  pip install lxml     匯入模組:  from bs4 import BeautifulSoup  import requests  import os    1">
+<meta property="og:description" content="開發流程: 分析網站原始碼，取得圖片標籤或屬性 爬取圖片所在網址 (來源網址) 下載圖片到資料夾裡面   所需套件:  pip install requests  pip install beautifulsoup4  pip install lxml     匯入模組:  from bs4 import BeautifulSoup  import requests  import os">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2021-08-05T08:25:41.000Z">
-<meta property="article:modified_time" content="2021-08-05T08:26:55.910Z">
+<meta property="article:published_time" content="2021-08-05T08:25:00.000Z">
+<meta property="article:modified_time" content="2021-08-05T08:41:44.118Z">
 <meta property="article:author" content="oscar">
 <meta property="article:tag" content="AI,爬蟲,筆記">
 <meta name="twitter:card" content="summary">
@@ -81,7 +81,7 @@
         <section id="main"><article id="post-diary-200805" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/08/05/diary-200805/" class="article-date">
-  <time class="dt-published" datetime="2021-08-05T08:25:41.000Z" itemprop="datePublished">2021-08-05</time>
+  <time class="dt-published" datetime="2021-08-05T08:25:00.000Z" itemprop="datePublished">2021-08-05</time>
 </a>
     
   </div>
@@ -111,15 +111,17 @@
 <blockquote>
 <p>匯入模組:<br>  from bs4 import BeautifulSoup<br>  import requests<br>  import os  </p>
 </blockquote>
+<span id="more"></span>
+
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">name = <span class="built_in">input</span>(<span class="string">&quot;input the download img：&quot;</span>)</span><br><span class="line"> </span><br><span class="line">html = requests.get(<span class="string">f&quot;https://unsplash.com/s/photos/<span class="subst">&#123;input_image&#125;</span>&quot;</span>)</span><br><span class="line">soup = BeautifulSoup(response.text, <span class="string">&quot;lxml&quot;</span>)</span><br><span class="line"> </span><br><span class="line">results = soup.find_all(<span class="string">&quot;img&quot;</span>, &#123;<span class="string">&quot;class&quot;</span>: <span class="string">&quot;_2VWD4 _2zEKz&quot;</span>&#125;, limit=<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="selenium-實作"><a href="#selenium-實作" class="headerlink" title="selenium 實作"></a>selenium 實作</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">import</span> urllib.request</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> Select</span><br><span class="line">n = <span class="built_in">input</span>()</span><br><span class="line">w = <span class="built_in">input</span>()</span><br><span class="line">time_ = <span class="built_in">input</span>()</span><br><span class="line"></span><br><span class="line">driverPath = <span class="string">&#x27;chromedriver.exe&#x27;</span></span><br><span class="line">b = webdriver.Chrome(executable_path=driverPath) </span><br><span class="line">b.get(<span class="string">&#x27;https://www.cwb.gov.tw/V8/C/W/OBS_Sat.html&#x27;</span>)</span><br><span class="line"></span><br><span class="line">b.find_element_by_id(<span class="string">&#x27;Tab&#x27;</span> + n).click()</span><br><span class="line">b.find_element_by_xpath(<span class="string">&quot;//label[@for=&#x27;area&quot;</span>+w+<span class="string">&quot;&#x27;]&quot;</span>).click()</span><br><span class="line">sel = Select(b.find_element_by_id(<span class="string">&#x27;selectday&#x27;</span>))</span><br><span class="line"></span><br><span class="line">format_time = datetime.datetime.strptime(time_,<span class="string">&quot;%Y/%m/%d %H:%M&quot;</span>)</span><br><span class="line"><span class="comment">#print(format_time)</span></span><br><span class="line"><span class="comment">#print(format_time.strftime(&quot;%Y/%m/%d %H:%M&quot;))</span></span><br><span class="line"><span class="comment">#print(time_)</span></span><br><span class="line">pic_src = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">6</span>):</span><br><span class="line">    sel.select_by_visible_text(format_time.strftime(<span class="string">&quot;%Y/%m/%d %H:%M&quot;</span>))</span><br><span class="line">    format_time = format_time + datetime.timedelta(minutes =- <span class="number">10</span>)</span><br><span class="line">    pic_src.append(b.find_element_by_xpath(<span class="string">&#x27;//img[@alt=&quot;衛星雲圖&quot;]&#x27;</span>).get_attribute(<span class="string">&#x27;src&#x27;</span>))</span><br><span class="line"><span class="built_in">print</span>(pic_src)</span><br><span class="line"><span class="keyword">for</span> idx,pic <span class="keyword">in</span> <span class="built_in">enumerate</span>(pic_src):</span><br><span class="line">    plt.subplot(<span class="number">2</span>,<span class="number">3</span>,idx+<span class="number">1</span>)</span><br><span class="line">    s = urllib.request.urlopen(pic)</span><br><span class="line">    p = plt.imread(s,<span class="string">&#x27;jpg&#x27;</span>)</span><br><span class="line">    plt.imshow(p)</span><br><span class="line">plt.show()</span><br><span class="line"><span class="comment">#2021/05/07 15:10</span></span><br></pre></td></tr></table></figure>
-
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://oscar50513.github.io/2021/08/05/diary-200805/" data-id="ckrynr5a80000k0vea5izgvui" data-title="Python 網頁爬蟲" class="article-share-link">Share</a>
+      <a data-url="https://oscar50513.github.io/2021/08/05/diary-200805/" data-id="ckryxxslv0001iove3fpk2hn6" data-title="Python 網頁爬蟲" class="article-share-link">Share</a>
       
       
       
