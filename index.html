@@ -29,7 +29,123 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首頁</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">總檔</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分類</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">標簽</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小哲的部落格</div><div class="header-banner-info__subtitle">一個紀錄學習的地方</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/10/16/%E9%80%B2%E9%9A%8E%E9%9B%BB%E8%85%A6%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95-cmd/">進階電腦操作方法_cmd</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">發表於</span><span class="post-meta-item__value">2021-10-16</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新於</span><span class="post-meta-item__value">2021-10-16</span></span></div></header><div class="post-body"><div class="post-excerpt"><hr>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首頁</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">總檔</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分類</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">標簽</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小哲的部落格</div><div class="header-banner-info__subtitle">一個紀錄學習的地方</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/11/01/datetime/">[ 文章無標題 ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">發表於</span><span class="post-meta-item__value">2021-11-01</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新於</span><span class="post-meta-item__value">2021-11-01</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="Python-datetime"   >
+          <a href="#Python-datetime" class="heading-link"><i class="fas fa-link"></i></a><a href="#Python-datetime" class="headerlink" title="Python_datetime"></a>Python_datetime</h1>
+      <ul>
+<li>date(日期)、time(時間)、datetime(date+time)</li>
+<li>timedelta(計算立時期間的型態)、timezone(處理時區資訊的型態)</li>
+</ul>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="現在時間"   >
+          <a href="#現在時間" class="heading-link"><i class="fas fa-link"></i></a><a href="#現在時間" class="headerlink" title="現在時間"></a>現在時間</h2>
+      <ul>
+<li>datetime.now(datetime.today)</li>
+<li>date.today()</li>
+<li>time.localtime()</li>
+</ul>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">now = datetime.datetime.now()</span><br><span class="line"><span class="built_in">print</span>(now)</span><br><span class="line">today = datetime.datetime.today()</span><br><span class="line"><span class="built_in">print</span>(today)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>2021-11-01 12:27:19.926574
+2021-11-01 12:27:19.926574
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">only_date = datetime.date.today()</span><br><span class="line"><span class="built_in">print</span>(only_date)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>2021-11-01
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="built_in">print</span>(time.localtime())</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>time.struct_time(tm_year=2021, tm_mon=11, tm_mday=1, tm_hour=12, tm_min=30, tm_sec=11, tm_wday=0, tm_yday=305, tm_isdst=0)
+</code></pre>
+
+        <h2 id="取得時間參數"   >
+          <a href="#取得時間參數" class="heading-link"><i class="fas fa-link"></i></a><a href="#取得時間參數" class="headerlink" title="取得時間參數"></a>取得時間參數</h2>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">today = datetime.datetime.now()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;year:&#x27;</span>, today.year)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;month:&#x27;</span>, today.month)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;day:&#x27;</span>, today.day)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>year: 2021
+month: 11
+day: 1
+</code></pre>
+
+        <h2 id="處理日期格式"   >
+          <a href="#處理日期格式" class="heading-link"><i class="fas fa-link"></i></a><a href="#處理日期格式" class="headerlink" title="處理日期格式"></a>處理日期格式</h2>
+      <ul>
+<li>datetime.datetime.strptime()</li>
+<li>datetime.datetime.strftime(“%Y/%m/%d %H:%M:%S”):設定輸出格式~</li>
+<li>pd.to_datetime():pandas</li>
+</ul>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">date = <span class="string">&#x27;2021/06/28&#x27;</span></span><br><span class="line">dt = datetime.datetime.strptime(date, <span class="string">&quot;%Y/%m/%d&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;original:&quot;</span>, date)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;new:&quot;</span>, dt)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>original: 2021/06/28
+new: 2021-06-28 00:00:00
+</code></pre>
+
+        <h2 id="應用"   >
+          <a href="#應用" class="heading-link"><i class="fas fa-link"></i></a><a href="#應用" class="headerlink" title="應用"></a>應用</h2>
+      <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#計算今天是今年的第幾天</span></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">date = <span class="built_in">input</span>(<span class="string">&quot;今天日期&lt;2021/11/01&gt;:&quot;</span>)</span><br><span class="line">dt = datetime.datetime.strptime(date, <span class="string">&quot;%Y/%m/%d&quot;</span>)</span><br><span class="line">this_year = datetime.datetime.strptime(date[:<span class="number">4</span>]+<span class="string">&quot;/01/01&quot;</span>, <span class="string">&quot;%Y/%m/%d&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;今年已經過了&quot;</span>,<span class="built_in">int</span>((dt-this_year).days)+<span class="number">1</span>, <span class="string">&quot;天惹!!&quot;</span>)</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>今天日期&lt;2021/11/01&gt;:2021/11/01
+今年已經過了 305 天惹!!
+</code></pre>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#調整時差_datetime.timedelta()</span></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">now = datetime.datetime.now()</span><br><span class="line">time_del = datetime.timedelta(hours=<span class="number">3</span>)</span><br><span class="line">new_dt = now - time_del</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;原始時間:&quot;</span>, now.strftime(<span class="string">&quot;%Y/%m/%d %H:%M:%S&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;時差時間:&quot;</span>, new_dt.strftime(<span class="string">&quot;%Y/%m/%d %H:%M:%S&quot;</span>))</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>原始時間: 2021/11/01 12:58:30
+時差時間: 2021/11/01 09:58:30
+</code></pre>
+
+        <h1 id="股票應用-交割日期計算"   >
+          <a href="#股票應用-交割日期計算" class="heading-link"><i class="fas fa-link"></i></a><a href="#股票應用-交割日期計算" class="headerlink" title="股票應用_交割日期計算"></a>股票應用_交割日期計算</h1>
+      
+        <h2 id="交割日期"   >
+          <a href="#交割日期" class="heading-link"><i class="fas fa-link"></i></a><a href="#交割日期" class="headerlink" title="交割日期:"></a>交割日期:</h2>
+      <pre><code>假設投資人在 T日 購買一張股票， T日稱為成交日期。
+不過投資人必須要等到 T+1(隔日) 才會收到這張股票。
+若是要賣這張股票，也是T+1(隔日)才能賣出。
+而這張股票必須支付的股款，必須在T+2早上10點前存入證券交割帳戶，
+T+2 也就是所謂的交割日期。
+若是T+2早上10點後，戶頭裡面的餘額不夠支付，就會發生違約交割的情形。
+</code></pre>
+
+        <h2 id="股票買賣交易流程"   >
+          <a href="#股票買賣交易流程" class="heading-link"><i class="fas fa-link"></i></a><a href="#股票買賣交易流程" class="headerlink" title="股票買賣交易流程:"></a>股票買賣交易流程:</h2>
+      <div class="table-container"><table>
+<thead>
+<tr>
+<th align="center">T日(今天)</th>
+<th align="center">T+1日(明天)</th>
+<th align="center">T+2日(後天10：00)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">購買(賣出)股票</td>
+<td align="center">取得(失去)股票</td>
+<td align="center">支出(收入)股款</td>
+</tr>
+</tbody></table></div>
+
+        <h2 id="作業一"   >
+          <a href="#作業一" class="heading-link"><i class="fas fa-link"></i></a><a href="#作業一" class="headerlink" title="作業一:"></a>作業一:</h2>
+      <blockquote>
+<p>每當我們成功買進股票時，券商發送訊息會告知成交的相關訊息，<br>請設計一程式，將成交回報的字串處理過後，輸出相關的交割資訊來提醒投資人。  </p>
+</blockquote>
+<pre><code>input:  
+&quot;於 7/15 2330 限價 581元  盤中零股現買 20股 已成交&quot;   
+output: 
+&quot;您於 7/15 購買 2330，每股 581元 20股&quot;  
+&quot;提醒您交割日期為 7月17日 10:00，交割款項為 11637元!&quot;
+</code></pre>
+<p>備註:<br>輸入輸出的各項資訊都是以空格分開<br>交割款項 = 成交價格 + 券商手續費<br>成交價格 = 581(成交價) * 20(股數)<br>券商手續費 = 成交價格 * 0.1425%  </p>
+<figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#於 7/30 2330 限價 581元  盤中零股現買 20股 已成交</span></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line">step = datetime.timedelta(<span class="number">2</span>)</span><br><span class="line">data = <span class="built_in">input</span>(<span class="string">&quot;於 7/30 2330 限價 581元 盤中零股現買 20股 已成交\n&quot;</span>)</span><br><span class="line">s = data.split(<span class="string">&#x27; &#x27;</span>)</span><br><span class="line"><span class="comment">#print(s)</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\n您於&quot;</span>, s[<span class="number">1</span>], <span class="string">&quot;購買&quot;</span>, s[<span class="number">2</span>], <span class="string">&quot;，每股&quot;</span>, s[<span class="number">4</span>], <span class="string">&#x27;共&#x27;</span>, s[<span class="number">6</span>])</span><br><span class="line"></span><br><span class="line">dt = datetime.datetime.strptime(s[<span class="number">1</span>],<span class="string">&quot;%m/%d&quot;</span>)</span><br><span class="line">day = dt + step</span><br><span class="line">day = day.strftime(<span class="string">&quot;%m/%d&quot;</span>)</span><br><span class="line"></span><br><span class="line">price = <span class="built_in">float</span>(s[<span class="number">4</span>].replace(<span class="string">&#x27;元&#x27;</span>,<span class="string">&#x27;&#x27;</span>))</span><br><span class="line"><span class="comment">#print(price)</span></span><br><span class="line">num = <span class="built_in">int</span>(s[<span class="number">6</span>].replace(<span class="string">&#x27;股&#x27;</span>,<span class="string">&#x27;&#x27;</span>))</span><br><span class="line">s_price = <span class="built_in">round</span>(price * num * <span class="number">0.001425</span>) </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;提醒您交割日期為&quot;</span>, day, <span class="string">&quot;，交割款項為&quot;</span>, price*num+s_price, <span class="string">&quot;元!&quot;</span> )</span><br></pre></td></tr></table></div></figure>
+
+<pre><code>於 7/30 2330 限價 581元 盤中零股現買 20股 已成交
+於 7/30 2330 限價 581元 盤中零股現買 20股 已成交
+
+您於 7/30 購買 2330 ，每股 581元 共 20股
+提醒您交割日期為 08/01 ，交割款項為 11637.0 元!
+</code></pre>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/10/16/%E9%80%B2%E9%9A%8E%E9%9B%BB%E8%85%A6%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95-cmd/">進階電腦操作方法_cmd</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">發表於</span><span class="post-meta-item__value">2021-10-16</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新於</span><span class="post-meta-item__value">2021-10-16</span></span></div></header><div class="post-body"><div class="post-excerpt"><hr>
 
         <h1 id="進階電腦操作方法-CMD"   >
           <a href="#進階電腦操作方法-CMD" class="heading-link"><i class="fas fa-link"></i></a><a href="#進階電腦操作方法-CMD" class="headerlink" title="進階電腦操作方法_CMD"></a>進階電腦操作方法_CMD</h1>
@@ -114,4 +230,4 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></div></figure>
 
 <p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/M42-logo.JPG" alt="avatar"></div><p class="sidebar-ov-author__text">oscar</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">總檔</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分類</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">標簽</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-tw" target="_blank" rel="noopener" data-popover="知識共享許可協議" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>oscar</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 強力驅動</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主題 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/M42-logo.JPG" alt="avatar"></div><p class="sidebar-ov-author__text">oscar</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">6</div><div class="sidebar-ov-state-item__name">總檔</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分類</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">標簽</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-tw" target="_blank" rel="noopener" data-popover="知識共享許可協議" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>oscar</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 強力驅動</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主題 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
